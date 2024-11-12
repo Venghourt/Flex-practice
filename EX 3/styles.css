@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a00f4, #d4145a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-plan {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    column-gap: 50px;
+    transition: transform 0.3s;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.pricing-plan h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #3e8ef7;
+}
+
+.price {
+    font-size: 28px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #2d55ff;
+}
+
+.price span {
+    font-size: 36px;
+    color: #3e8ef7;
+}
+
+.features {
+    list-style-type: none;
+    padding-left: 70px;
+    line-height: 2;    
+}
+
+.features li {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0; 
+    display: flex;
+    align-items: center;
+
+}
+
+.btn {
+    background: linear-gradient(145deg, #3e8ef7, #306ad9);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.btn:hover {
+    background: rgb(52, 11, 235);
+}
+
+
+@media (max-width: 768px) {
+    .pricing-plan {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-plan {
+        width: 100%;
+    }
+}
